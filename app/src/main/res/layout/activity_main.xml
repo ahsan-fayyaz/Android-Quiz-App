@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:fadingEdge="vertical"
-        android:fontFamily="@font/bowlby_one"
+        android:fontFamily="sans-serif"
         android:selectAllOnFocus="false"
         android:text="BEGIN" />
 
