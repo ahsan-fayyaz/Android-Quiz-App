@@ -35,8 +35,9 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:fadingEdge="vertical"
+        android:fontFamily="@font/bowlby_one"
         android:selectAllOnFocus="false"
         android:text="BEGIN" />
 
 
-</RelativeLayout>constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
