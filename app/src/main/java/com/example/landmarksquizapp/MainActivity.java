@@ -1,8 +1,15 @@
-package com.example.landmarksquizapp;
+package com.example.landmarksquiz;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.example.landmarksquizapp.QuizActivity;
+import com.example.landmarksquizapp.R;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,5 +17,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button buttonBegin = findViewById(R.id.button_begin);
+        buttonBegin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                beginQuiz();
+
+            }
+        });
+    }
+
+
+    private void beginQuiz() {
+        Intent intent = new android.content.Intent(MainActivity.this, QuizActivity.class);
+        startActivity(intent);
     }
 }
